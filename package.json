@@ -1,0 +1,10 @@
+{
+  "name": "tabshow",
+  "title": "tabShow",
+  "id": "tabShow@darkowlzz",
+  "description": "View tabs like slideshows.",
+  "permissions": {"private-browsing": true},
+  "author": "Sunny (darkowlzz) <indiasuny000@gmail.com>",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}
