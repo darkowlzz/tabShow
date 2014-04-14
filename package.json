@@ -6,5 +6,30 @@
   "permissions": {"private-browsing": true},
   "author": "Sunny (darkowlzz) <indiasuny000@gmail.com>",
   "license": "MPL 2.0",
-  "version": "0.1"
+  "version": "0.1",
+
+  "preferences": [{
+    "name": "timer",
+    "description": "Time at which tab switches (in seconds)",
+    "type": "integer",
+    "title": "Tab switch time",
+    "value": 2
+  },
+  {
+    "name": "direction",
+    "description": "Direction of auto tab switch",
+    "type": "menulist",
+    "title": "Play direction",
+    "value": "right",
+    "options": [
+      {
+        "value": "right",
+        "label": "Left to Right"
+      },
+      {
+        "value": "left",
+        "label": "Right to Left"
+      }
+    ]
+  }]
 }
