@@ -18,12 +18,6 @@ function closeTabs(count, callback) {
   }
 }
 
-function tabActivate(index) {
-  console.log('tab index before: ' + tabs.activeTab.index);
-  tabs[index].activate();
-  console.log('tab index after: ' + tabs.activeTab.index);
-}
-
 exports['test tab count'] = function(assert, done) {
   tabs.open('about:blank');
   assert.ok(ts.getTabCount() == 2, 'Tab count works');
@@ -46,7 +40,7 @@ exports['test previous tab index'] = function(assert, done) {
 exports['test previous tab to first'] = function(assert, done) {
   openTabs(4, true);
   assert.ok(ts.getPreviousTabIndex() == (ts.getTabCount() - 1),
-            'Correct previous tab to first');
+                                         'Correct previous tab to first');
   closeTabs(4, done);
 }
 
