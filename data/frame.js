@@ -1,7 +1,7 @@
-window.addEventListener('message', updateTabIndex, false);
+window.addEventListener('message', updateTabTitle, false);
 
-function updateTabIndex(message) {
+function updateTabTitle(message) {
   console.log('data received: ' + message.data);
-  var count = document.getElementById('count');
-  count.textContent = message.data;
+  var title = document.getElementById('title');
+  title.textContent = message.data;
 }
