@@ -13,7 +13,7 @@
     "description": "Time at which tab switches (in seconds)",
     "type": "integer",
     "title": "Tab switch time",
-    "value": 2
+    "value": 4
   },
   {
     "name": "direction",
